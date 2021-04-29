@@ -1,0 +1,50 @@
+.body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.banner {
+  padding-bottom: 50px;
+  border-bottom: 2px solid black;
+}
+.slider {
+  max-width: 475px;
+  position: relative;
+  border: 3px solid #e6e6e6;
+  border-radius: 5px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.slider__line {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  left: 0;
+  transition: all ease 1s;
+}
+.slider-button {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  z-index: 2;
+  border-radius: 5px;
+  background-color: #3a3a3a;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: initial;
+  padding: 0;
+  margin: 0;
+}
+.slider-button_left {
+  left: 0;
+  bottom: 0;
+  background-image: url("./image/стрелка.png");
+}
+.slider-button_right {
+  bottom: 0;
+  background-image: url("./image/стрелка-1.png");
+}
+
+.slider__img {
+}
