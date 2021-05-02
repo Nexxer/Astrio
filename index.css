@@ -60,11 +60,12 @@
 .product {
   position: relative;
   background-color: bisque;
-  border: 1px solid black;
+  border: 3px solid black;
   border-radius: 25px;
   overflow: hidden;
   font-size: 20px;
   text-align: start;
+  height: min-content;
 }
 
 .product__image_container {
@@ -105,10 +106,26 @@
   padding: 2px 10px;
   color: white;
   background-color: #3a3a3a;
+  cursor: pointer;
 }
 .product__raiting {
   text-align: center;
+  padding: 10px;
 }
 
 .product__info {
+  display: none;
+  margin: 0 10px 15px;
+}
+
+.product:hover{
+  border: 3px solid orange;
+}
+
+.product:hover .product__add-btn{
+  background-color: orange;
+  border-color: orange;
+}
+.product:hover .product__info{
+  display: block;
 }
