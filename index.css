@@ -60,7 +60,7 @@
 .product {
   position: relative;
   border: 3px solid transparent;
-  overflow: hidden;
+  border-bottom: 0;
   font-size: 20px;
   text-align: start;
   height: min-content;
@@ -121,7 +121,7 @@
 .product__raiting:after {
   content: "";
   display: inline-block;
-  width: 35%;
+  width: 50%;
   height: 1px;
   background: rgb(151, 151, 151);
   position: relative;
@@ -138,10 +138,20 @@
 .product__info {
   display: none;
   margin: 0 0 10px;
+  position: absolute;
+  z-index: 2;
+  top: calc(100% - 3px);
+  left: 0;
+  border: 3px solid orange;
+  border-top: 0;
+  margin-left: -3px;
+  padding: 0 10px;
+  width: calc(100% - 20px);
+  background-color: white;
 }
 
 .product:hover {
-  border: 3px solid orange;
+  border-color: orange;
   box-shadow: 0 0 50px #9a9898;
 }
 
@@ -151,6 +161,7 @@
 }
 .product:hover .product__info {
   display: block;
+  box-shadow: 0 0 50px #9a9898;
 }
 .product:hover .product__raiting {
   color: orange;
