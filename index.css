@@ -50,12 +50,19 @@
 }
 
 .listing {
+      padding: 20px;
 }
 .products-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 400px);
+  grid-template-columns: repeat(3, 400px);
   gap: 50px;
   justify-content: center;
+}
+
+@media screen and (max-width: 1350px)  {
+  .products-container{
+      grid-template-columns: repeat(auto-fit, 400px);
+  }
 }
 .product {
   position: relative;
