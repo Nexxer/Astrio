@@ -16,7 +16,7 @@ function init() {
   images.forEach( item => {
     item.style.width = `${width}px`;
   })
-  rightButton.style.left = `${width - rightButton.offsetWidth - slider.clientLeft * 2}px`;
+  rightButton.style.left = `${width - rightButton.offsetWidth - slider.clientLeft * 2 - 5}px`;
   rollSlider()
 };
 
