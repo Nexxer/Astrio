@@ -116,6 +116,7 @@
   text-align: center;
   padding: 10px;
   font-size: 2rem;
+  overflow: hidden;
 }
 .product__raiting:before,
 .product__raiting:after {
@@ -152,7 +153,7 @@
 
 .product:hover {
   border-color: orange;
-  box-shadow: 0 0 50px #9a9898;
+  box-shadow: 15px 20px 15px -5px #777, -15px 20px 15px -5px #777;
 }
 
 .product:hover .product__add-btn {
@@ -161,7 +162,7 @@
 }
 .product:hover .product__info {
   display: block;
-  box-shadow: 0 0 50px #9a9898;
+  box-shadow: 15px 10px 15px -5px #777, -15px 10px 15px -5px #777;
 }
 .product:hover .product__raiting {
   color: orange;
