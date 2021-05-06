@@ -47,6 +47,7 @@
 }
 
 .slider__img {
+  height: 210px;
 }
 
 .listing {
@@ -173,4 +174,7 @@
 }
 .product:hover .product__raiting {
   color: orange;
+}
+.footer{
+  height: 200px;
 }
